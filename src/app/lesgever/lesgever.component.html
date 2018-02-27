@@ -1,0 +1,11 @@
+<h2>Alle lesgevers</h2>
+
+<ul class="list-group">
+    <li *ngFor="let lesgever of lesgevers"
+        [class.selected]="lesgever === selectedLesgever"
+        (click)="onSelect(lesgever)">
+        <span class="badge">{{lesgever.id}}</span> {{lesgever.naam}}
+    </li>
+</ul>
+
+<app-lesgever-detail [lesgever]="selectedLesgever"></app-lesgever-detail>
