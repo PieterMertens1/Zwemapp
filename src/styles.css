@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+@import "styles/flatly/bootstrap.css";
+@import "styles/flatly/bootstrap.min.css";
+/*@import "styles/flatly/_bootswatch.scss";*/
+/*@import "styles/flatly/_variables.scss";*/
+

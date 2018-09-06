@@ -1,0 +1,67 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">{{title}}</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dagen</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Maandag</a></li>
+                        <li><a href="#">Dinsdag</a></li>
+                        <li><a href="#">Woensdag</a></li>
+                        <li><a href="#">Donderdag</a></li>
+                        <li><a href="#">Vrijdag</a></li>
+                        <li><a href="#">Zaterdag</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+
+            <form class="navbar-form navbar-right" action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Zoek" name="zoekNav">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <app-messages></app-messages>
+    <router-outlet></router-outlet>
+
+
+</div>
+
+
+<footer class="card-footer container-fluid">
+    <p>Dilkom app door {{author}}</p>
+</footer>
